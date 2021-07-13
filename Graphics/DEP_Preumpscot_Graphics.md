@@ -376,7 +376,7 @@ ptsmooth(tmp1, .x  = sitenum,  .y  = depth,  .val = do,
                                barheight = unit(0.2, 'cm'))) +
   
   geom_point(mapping = aes(sitenum, depth), data= tmp1,
-             shape = 21, fill = NA, color = 'gray30', size = 3) +
+             shape = 21, fill = NA, color = 'gray70', size = 3) +
   scale_x_continuous(breaks = 1:5, 
                      labels = c('PRV70', 'PR-17', 'PR-28', 'CBPR', 'P6FGG')) +
   ylim(7.5,0) +
@@ -480,7 +480,7 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = do,
                                barheight = unit(0.2, 'cm'))) +
   
   geom_point(mapping = aes(sitenum, depth), data= tmp2,
-             shape = 21, fill = NA, color = 'gray30', size = 3) +
+             shape = 21, fill = NA, color = 'gray70', size = 3) +
   scale_x_continuous(breaks = 1:5, 
                      labels = c('PRV70', 'PR-17', 'PR-28', 'CBPR', 'P6FGG')) +
   ylim(7.5,0) +
@@ -510,7 +510,7 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = do,
                                barheight = unit(0.2, 'cm'))) +
   
   geom_point(mapping = aes(sitenum, depth), data= tmp2,
-             shape = 21, fill = NA, color = 'gray30', size = 3) +
+             shape = 21, fill = NA, color = 'gray70', size = 3) +
   scale_x_continuous(breaks = 1:5, 
                      labels = c('PRV70', 'PR-17', 'PR-28', 'CBPR', 'P6FGG')) +
   ylim(7.5,0) +
