@@ -346,7 +346,7 @@ ptsmooth(tmp1, .x  = sitenum,  .y  = depth,  .val = salinity,
   geom_point(mapping = aes(sitenum, depth), data= tmp1,
              shape = 21, fill = NA, color = 'gray70', size = 3) +
   scale_x_continuous(breaks = 1:5, 
-                     labels = c('PRV70', 'PR-17', 'PR-28', 'CBPR', 'P6FGG')) +
+                     labels = levels(tmp1$site)) +
   ylim(7.5,0) +
 
   xlab('') +
@@ -381,7 +381,7 @@ ptsmooth(tmp1, .x  = sitenum,  .y  = depth,  .val = do,
   geom_point(mapping = aes(sitenum, depth), data= tmp1,
              shape = 21, fill = NA, color = 'gray70', size = 3) +
   scale_x_continuous(breaks = 1:5, 
-                     labels = c('PRV70', 'PR-17', 'PR-28', 'CBPR', 'P6FGG')) +
+                     labels = levels(tmp1$site)) +
   ylim(7.5,0) +
 
   xlab('') +
@@ -460,7 +460,7 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = salinity,
   geom_point(mapping = aes(sitenum, depth), data= tmp2,
              shape = 21, fill = NA, color = 'gray70', size = 3) +
   scale_x_continuous(breaks = 1:5, 
-                     labels = c('PRV70', 'PR-17', 'PR-28', 'CBPR', 'P6FGG')) +
+                     labels = levels(tmp2$site)) +
   ylim(7.5,0) +
 
   xlab('') +
@@ -495,7 +495,7 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = do,
   geom_point(mapping = aes(sitenum, depth), data= tmp2,
              shape = 21, fill = NA, color = 'gray70', size = 3) +
   scale_x_continuous(breaks = 1:5, 
-                     labels = c('PRV70', 'PR-17', 'PR-28', 'CBPR', 'P6FGG')) +
+                     labels = levels(tmp2$site)) +
   ylim(7.5,0) +
 
   xlab('') +
