@@ -222,8 +222,9 @@ ptsmooth(tmp1, .x  = sitenum,  .y  = depth,  .val = temp,
   ylab('Depth (m)') +
   ggtitle('May')
 
-ggsave('figures/may_temp.pdf', device = cairo_pdf, width = 3, height = 3)
-ggsave('figures/may_temp.svg', width = 3, height = 3)
+ggsave('figures/presumpscot_may_temp.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
+#ggsave('figures/presumpscot_may_temp.svg', width = 3, height = 3)
 ```
 
 ### Salinity
@@ -250,6 +251,8 @@ ptsmooth(tmp1, .x  = sitenum,  .y  = depth,  .val = salinity,
   xlab('') +
   ylab('Depth (m)') +
   ggtitle('May')
+ggsave('figures/presumpscot_may_salinity.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
 ```
 
 ### Dissolved Oxygen
@@ -276,6 +279,8 @@ ptsmooth(tmp1, .x  = sitenum,  .y  = depth,  .val = do,
   xlab('') +
   ylab('Depth (m)') +
   ggtitle('May')
+ggsave('figures/presumpscot_may_oxygen.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
 ```
 
 
@@ -311,6 +316,8 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = temp,
   xlab('') +
   ylab('Depth (m)') +
   ggtitle('September')
+ggsave('figures/presumpscot_sept_temp.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
 ```
 
 ### Salinity
@@ -337,6 +344,8 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = salinity,
   xlab('') +
   ylab('Depth (m)') +
   ggtitle('September')
+ggsave('figures/presumpscot_sept_salinity.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
 ```
 
 ### Dissolved Oxygen
@@ -363,7 +372,10 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = do,
   xlab('') +
   ylab('Depth (m)') +
   ggtitle('September')
+ggsave('figures/presumpscot_sept_oxygen.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
 ```
+
 ### Dissolved Oxygen, September, Short Color Scale
 ```{r sept_do_short_scale, fig.width=3, fig.height = 3}
 ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = do, 
@@ -388,5 +400,7 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = do,
   xlab('') +
   ylab('Depth (m)') +
   ggtitle('September')
+ggsave('figures/presumpscot_sept_oxygen_alt.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
 ```
 

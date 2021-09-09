@@ -28,6 +28,8 @@ Curtis C. Bohlen, Casco Bay Estuary Partnership.
         -   [Temperature](#temperature-1)
         -   [Salinity](#salinity-1)
         -   [Dissolved Oxygen](#dissolved-oxygen-1)
+        -   [Dissolved Oxygen, September, Short Color
+            Scale](#dissolved-oxygen-september-short-color-scale)
 
 <img
     src="https://www.cascobayestuary.org/wp-content/uploads/2014/04/logo_sm.jpg"
@@ -316,14 +318,12 @@ ptsmooth(tmp1, .x  = sitenum,  .y  = depth,  .val = temp,
 <img src="DEP_Preumpscot_Graphics_files/figure-gfm/unnamed-chunk-11-1.png" style="display: block; margin: auto;" />
 
 ``` r
-ggsave('figures/may_temp.pdf', device = cairo_pdf, width = 3, height = 3)
+ggsave('figures/presumpscot_may_temp.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
 #> Warning: Removed 39298 rows containing missing values (geom_tile).
 
 #> Warning: Removed 7 rows containing missing values (geom_point).
-ggsave('figures/may_temp.svg', width = 3, height = 3)
-#> Warning: Removed 39298 rows containing missing values (geom_tile).
-
-#> Warning: Removed 7 rows containing missing values (geom_point).
+#ggsave('figures/presumpscot_may_temp.svg', width = 3, height = 3)
 ```
 
 ### Salinity
@@ -359,6 +359,14 @@ ptsmooth(tmp1, .x  = sitenum,  .y  = depth,  .val = salinity,
 
 <img src="DEP_Preumpscot_Graphics_files/figure-gfm/unnamed-chunk-12-1.png" style="display: block; margin: auto;" />
 
+``` r
+ggsave('figures/presumpscot_may_salinity.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
+#> Warning: Removed 39298 rows containing missing values (geom_tile).
+
+#> Warning: Removed 7 rows containing missing values (geom_point).
+```
+
 ### Dissolved Oxygen
 
 ``` r
@@ -391,6 +399,14 @@ ptsmooth(tmp1, .x  = sitenum,  .y  = depth,  .val = do,
 ```
 
 <img src="DEP_Preumpscot_Graphics_files/figure-gfm/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
+
+``` r
+ggsave('figures/presumpscot_may_oxygen.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
+#> Warning: Removed 39298 rows containing missing values (geom_tile).
+
+#> Warning: Removed 7 rows containing missing values (geom_point).
+```
 
 ## September
 
@@ -432,6 +448,11 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = temp,
 
 <img src="DEP_Preumpscot_Graphics_files/figure-gfm/unnamed-chunk-15-1.png" style="display: block; margin: auto;" />
 
+``` r
+ggsave('figures/presumpscot_sept_temp.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
+```
+
 ### Salinity
 
 ``` r
@@ -463,6 +484,11 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = salinity,
 
 <img src="DEP_Preumpscot_Graphics_files/figure-gfm/unnamed-chunk-16-1.png" style="display: block; margin: auto;" />
 
+``` r
+ggsave('figures/presumpscot_sept_salinity.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
+```
+
 ### Dissolved Oxygen
 
 ``` r
@@ -493,7 +519,13 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = do,
 ```
 
 <img src="DEP_Preumpscot_Graphics_files/figure-gfm/unnamed-chunk-17-1.png" style="display: block; margin: auto;" />
-\#\#\# Dissolved Oxygen, September, Short Color Scale
+
+``` r
+ggsave('figures/presumpscot_sept_oxygen.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
+```
+
+### Dissolved Oxygen, September, Short Color Scale
 
 ``` r
 ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = do, 
@@ -523,3 +555,8 @@ ptsmooth(tmp2, .x  = sitenum,  .y  = depth,  .val = do,
 ```
 
 <img src="DEP_Preumpscot_Graphics_files/figure-gfm/sept_do_short_scale-1.png" style="display: block; margin: auto;" />
+
+``` r
+ggsave('figures/presumpscot_sept_oxygen_alt.pdf', device = cairo_pdf, 
+       width = 3, height = 3)
+```
