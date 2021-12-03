@@ -6,7 +6,7 @@ This data file was developed by CBEP based on data from Maine's Department of
 Environmental Protection (DEP).
 
 Angie Brewer, of Maine DEP, shared data derived from DEP's "EGAD" data 
-system via an Excel File, "Curtis Bohlen 051021.xlsx".  Much of hte data
+system via an Excel File, "Curtis Bohlen 051021.xlsx".  Much of the data
 was sent to CBEP because of its implications for nutrients in
 Casco Bay.  We conducted a detailed review and reorganization of the
 data.  Original data and related R notebooks documenting the data 

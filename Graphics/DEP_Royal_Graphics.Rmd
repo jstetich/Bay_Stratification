@@ -27,7 +27,7 @@ expect variation by depth, time, and location.  Unexplained variation is also
 fairly common.
 
 Here we focus on producing graphical summaries of the DEP sonde downcast data
-from a transect from the head of tida at the Presumpscot Estuary to  Fort 
+from a transect from the head of tide at the Presumpscot Estuary to Fort 
 Gorges.
 
 1.  Variation by time of year for each site and year, and 
