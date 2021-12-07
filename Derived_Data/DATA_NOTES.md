@@ -13,7 +13,7 @@ data.  Original data and related R notebooks documenting the data
 reorganization steps are in the DEP_Nutrients repository.  
 
 This file was a result of that reorganization.  Specifically, we extracted 
-data that contined data from "downcasts" of water quality sondes so that
+data that contained data from "downcasts" of water quality sondes so that
 we could take a closer look at patterns of vertical stratification.
 
 ## combined_locations.csv
@@ -22,7 +22,7 @@ tracked by FOCB and MAine DEP.  Details are in the
 `Combined_Nutrients` GitHub archive.  It includes information on location
 of sampling sites used by DEP and FOCB.  We use it here because it offers
 a regionalization of sampling stations. to compare "inshore" vs "offshore" 
-stations in trernd analyses.
+stations in trend analyses.
 
 
 
