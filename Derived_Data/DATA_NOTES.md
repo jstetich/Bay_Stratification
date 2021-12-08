@@ -13,7 +13,7 @@ data.  Original data and related R notebooks documenting the data
 reorganization steps are in the DEP_Nutrients repository.  
 
 This file was a result of that reorganization.  Specifically, we extracted 
-data that continued data from "downcasts" of water quality sondes so that
+data that contained data from "downcasts" of water quality sondes so that
 we could take a closer look at patterns of vertical stratification.
 
 ## combined_locations.csv
